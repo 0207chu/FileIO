@@ -14,6 +14,7 @@ public class UsingBufferedReader {
         StopWatch.start();
 
         BufferedReader inputStream= new BufferedReader(new FileReader(args[0]));
+        //args[0] = input1MB.txt
         while (inputStream.read()!=-1){}
 
         long duration = StopWatch.stop();
@@ -27,6 +28,7 @@ public class UsingBufferedReader {
         StopWatch.start();
 
         BufferedReader inputStream2= new BufferedReader(new FileReader(args[1]));
+        //args[1] = input10MB.txt
         while (inputStream2.read()!=-1){}
 
         long duration2 = StopWatch.stop();
